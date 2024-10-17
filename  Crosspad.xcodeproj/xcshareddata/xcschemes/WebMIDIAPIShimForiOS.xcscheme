@@ -92,6 +92,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Crosspad-iOS"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
