@@ -221,7 +221,7 @@
 						ProvisioningStyle = Automatic;
 					};
 					C1965701190E771C0085E3FE = {
-						DevelopmentTeam = 56KSQYC3Y6;
+						DevelopmentTeam = TYJZB76BYB;
 						TestTargetID = C19656DD190E771C0085E3FE;
 					};
 				};
@@ -445,7 +445,7 @@
 				GCC_PREFIX_HEADER = "WebMIDIAPIPolyfill/Crosspad-Prefix.pch";
 				INFOPLIST_FILE = "WebMIDIAPIPolyfill/Crosspad-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Crosspad;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.crosspad.crosspad-iOS";
 				PRODUCT_NAME = Crosspad;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -484,7 +484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 56KSQYC3Y6;
+				DEVELOPMENT_TEAM = TYJZB76BYB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -498,7 +498,7 @@
 				);
 				INFOPLIST_FILE = "WebMIDIAPIPolyfillTests/CrosspadTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.taktech.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.crosspad.crosspad-iOS";
 				PRODUCT_NAME = CrosspadTests;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
