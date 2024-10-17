@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1331942CC1163000AFFF70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1331932CC1163000AFFF70 /* Images.xcassets */; };
+		0E1331952CC1163000AFFF70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1331932CC1163000AFFF70 /* Images.xcassets */; };
+		0E1331972CC117BB00AFFF70 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1331962CC117BB00AFFF70 /* AppIcon.xcassets */; };
+		0E1331982CC117BB00AFFF70 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1331962CC117BB00AFFF70 /* AppIcon.xcassets */; };
 		C191EE3A1917B6DC0014167A /* MIDIDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = C191EE391917B6DB0014167A /* MIDIDriver.m */; };
 		C191EE3D1917B85E0014167A /* MIDIParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C191EE3C1917B85E0014167A /* MIDIParser.m */; };
 		C19656E2190E771C0085E3FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19656E1190E771C0085E3FE /* Foundation.framework */; };
@@ -40,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E1331932CC1163000AFFF70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0E1331962CC117BB00AFFF70 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		C191EE381917B6DB0014167A /* MIDIDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIDriver.h; sourceTree = "<group>"; };
 		C191EE391917B6DB0014167A /* MIDIDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIDriver.m; sourceTree = "<group>"; };
 		C191EE3B1917B85E0014167A /* MIDIParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIParser.h; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 		C19656D5190E771C0085E3FE = {
 			isa = PBXGroup;
 			children = (
+				0E1331932CC1163000AFFF70 /* Images.xcassets */,
 				C19656E7190E771C0085E3FE /* WebMIDIAPIPolyfill */,
 				C19656E0190E771C0085E3FE /* Frameworks */,
 				C19656DF190E771C0085E3FE /* Products */,
@@ -116,6 +123,7 @@
 		C19656E0190E771C0085E3FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E1331962CC117BB00AFFF70 /* AppIcon.xcassets */,
 				C1A6EB1719E2053F00748234 /* WebKit.framework */,
 				C19656E1190E771C0085E3FE /* Foundation.framework */,
 				C19656E3190E771C0085E3FE /* CoreGraphics.framework */,
@@ -209,7 +217,8 @@
 				ORGANIZATIONNAME = Xazu;
 				TargetAttributes = {
 					C19656DD190E771C0085E3FE = {
-						DevelopmentTeam = 56KSQYC3Y6;
+						DevelopmentTeam = TYJZB76BYB;
+						ProvisioningStyle = Automatic;
 					};
 					C1965701190E771C0085E3FE = {
 						DevelopmentTeam = 56KSQYC3Y6;
@@ -217,11 +226,12 @@
 					};
 				};
 			};
-			buildConfigurationList = C19656D9190E771C0085E3FE /* Build configuration list for PBXProject "Crosspad" */;
+			buildConfigurationList = C19656D9190E771C0085E3FE /* Build configuration list for PBXProject " Crosspad" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -243,9 +253,11 @@
 			files = (
 				C196571A190E78090085E3FE /* index.html in Resources */,
 				C19656F8190E771C0085E3FE /* Main_iPad.storyboard in Resources */,
+				0E1331942CC1163000AFFF70 /* Images.xcassets in Resources */,
 				C19656FD190E771C0085E3FE /* Images.xcassets in Resources */,
 				C19656F5190E771C0085E3FE /* Main_iPhone.storyboard in Resources */,
 				C19656EC190E771C0085E3FE /* InfoPlist.strings in Resources */,
+				0E1331972CC117BB00AFFF70 /* AppIcon.xcassets in Resources */,
 				C196571E190E82F80085E3FE /* WebMIDIAPIPolyfill.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +266,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E1331982CC117BB00AFFF70 /* AppIcon.xcassets in Resources */,
+				0E1331952CC1163000AFFF70 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -411,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -422,14 +436,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 56KSQYC3Y6;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TYJZB76BYB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebMIDIAPIPolyfill/Crosspad-Prefix.pch";
 				INFOPLIST_FILE = "WebMIDIAPIPolyfill/Crosspad-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.taktech.${PRODUCT_NAME:rfc1034identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Crosspad;
 				PRODUCT_NAME = Crosspad;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -439,14 +460,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 56KSQYC3Y6;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TYJZB76BYB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebMIDIAPIPolyfill/Crosspad-Prefix.pch";
 				INFOPLIST_FILE = "WebMIDIAPIPolyfill/Crosspad-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.taktech.${PRODUCT_NAME:rfc1034identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.crosspad.crosspad-iOS";
 				PRODUCT_NAME = Crosspad;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -469,9 +497,13 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "WebMIDIAPIPolyfillTests/CrosspadTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.taktech.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = CrosspadTests;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crosspad.app/Crosspad";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -481,7 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 56KSQYC3Y6;
+				DEVELOPMENT_TEAM = TYJZB76BYB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -490,9 +522,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebMIDIAPIPolyfill/WebMIDIAPIShimForiOS-Prefix.pch";
 				INFOPLIST_FILE = "WebMIDIAPIPolyfillTests/CrosspadTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.taktech.${PRODUCT_NAME:rfc1034identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.crosspad.crosspad-iOS";
 				PRODUCT_NAME = CrosspadTests;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crosspad.app/Crosspad";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -501,7 +537,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C19656D9190E771C0085E3FE /* Build configuration list for PBXProject "Crosspad" */ = {
+		C19656D9190E771C0085E3FE /* Build configuration list for PBXProject " Crosspad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1965711190E771C0085E3FE /* Debug */,
