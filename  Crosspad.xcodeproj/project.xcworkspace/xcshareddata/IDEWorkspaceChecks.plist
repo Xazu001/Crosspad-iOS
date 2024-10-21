@@ -5,4 +5,10 @@
 	<key>IDEDidComputeMac32BitWarning</key>
 	<true/>
 </dict>
+<!--
+<head>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="theme-color" content="#000000">
+</head>
+-->
 </plist>

@@ -1,0 +1,9 @@
+<plist version="1.0">
+<dict>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
+    <key>UIStatusBarStyle</key>
+    <string>UIStatusBarStyleLightContent</string> <!-- Zmień na wybrany styl -->
+    <!-- Inne klucze -->
+</dict>
+</plist>
