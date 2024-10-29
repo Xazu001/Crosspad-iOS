@@ -63,7 +63,7 @@
     self.webView = webView;
 
     // Otwórz określony URL
-    NSURL *specificURL = [NSURL URLWithString:@"https://crosspad.app"];
+    NSURL *specificURL = [NSURL URLWithString:@"https://crosspad.app/mobile"];
     NSURLRequest *request = [NSURLRequest requestWithURL:specificURL];
     [_webView loadRequest:request];
 }
