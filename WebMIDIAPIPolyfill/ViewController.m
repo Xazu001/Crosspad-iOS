@@ -58,6 +58,7 @@
 
     // Utwórz WebView z konfiguracją
     MIDIWebView *webView = [[MIDIWebView alloc] initWithFrame:self.view.bounds configuration:configuration];
+    webView.scrollView.bounces = NO; // Wyłącz efekt przeciągania
     [self.view addSubview:webView];
 
     // Przypisz WebView do właściwości webView w ViewController
