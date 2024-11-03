@@ -20,8 +20,9 @@
 #import "WebViewDelegate.h"
 #import "MIDIDriver.h"
 
-@interface ViewController ()
+@interface ViewController () <WKNavigationDelegate>
 @property (nonatomic, strong) MIDIDriver *midiDriver;
+@property (nonatomic, strong) UIView *loadingView;
 @end
 
 @implementation ViewController
@@ -48,7 +49,7 @@
 
 - (void)viewDidLoad
 {
-  [super viewDidLoad];
+    [super viewDidLoad];
 
     _midiDriver = [[MIDIDriver alloc] init];
     
@@ -61,6 +62,19 @@
 
     // Przypisz WebView do właściwości webView w ViewController
     self.webView = webView;
+
+    // Dodaj widok ładowania
+    UIView *loadingView = [[UIView alloc] initWithFrame:self.view.bounds];
+    loadingView.backgroundColor = [UIColor darkColor];
+    UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
+    activityIndicator.center = loadingView.center;
+    [activityIndicator startAnimating];
+    [loadingView addSubview:activityIndicator];
+    [self.view addSubview:loadingView];
+    self.loadingView = loadingView;
+
+    // Ustaw delegata WebView, aby usunąć widok ładowania po załadowaniu strony
+    webView.navigationDelegate = self;
 
     // Otwórz określony URL
     NSURL *specificURL = [NSURL URLWithString:@"https://crosspad.app/mobile"];
