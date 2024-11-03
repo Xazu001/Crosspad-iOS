@@ -87,4 +87,11 @@
     [super didReceiveMemoryWarning];
 }
 
+#pragma mark - WKNavigationDelegate
+
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation
+{
+    [self.loadingView removeFromSuperview];
+}
+
 @end
