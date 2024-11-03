@@ -66,7 +66,7 @@
 
     // Dodaj widok ładowania
     UIView *loadingView = [[UIView alloc] initWithFrame:self.view.bounds];
-    loadingView.backgroundColor = [UIColor darkColor];
+    loadingView.backgroundColor = [UIColor blackColor];
     UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
     activityIndicator.center = loadingView.center;
     [activityIndicator startAnimating];
