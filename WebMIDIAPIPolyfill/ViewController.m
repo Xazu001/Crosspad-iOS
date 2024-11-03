@@ -51,6 +51,9 @@
 {
     [super viewDidLoad];
 
+    // Ukryj navigation bar
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+
     _midiDriver = [[MIDIDriver alloc] init];
     
     // Utwórz konfigurację dla WebView z użyciem MIDIDriver
